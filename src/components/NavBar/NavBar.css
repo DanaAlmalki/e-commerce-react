@@ -1,0 +1,22 @@
+.navBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191919;
+}
+
+img {
+  width: 225px;
+  margin-left: 50px;
+}
+
+.navList {
+  list-style: none;
+  color: #b88746;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

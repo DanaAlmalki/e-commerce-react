@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import NavBar from "./components/NavBar/NavBar.js";
 import "./App.css";
 
 function App() {
@@ -86,7 +87,7 @@ function App() {
   ];
   return (
     <div className="App">
-      <h1>React assignment</h1>
+      <NavBar />
     </div>
   );
 }
