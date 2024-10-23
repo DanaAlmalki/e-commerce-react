@@ -30,4 +30,5 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  min-width: 480px;
 }
