@@ -6,7 +6,7 @@ import "./NavBar.css";
 export default function NavBar() {
   return (
     <nav className="navBar">
-      <img src={logo} />
+      <img className="logo" src={logo} />
       <ul className="navList">
         <li>
           <a>Home</a>

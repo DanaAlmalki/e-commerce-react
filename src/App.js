@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import NavBar from "./components/NavBar/NavBar.js";
 import Footer from "./components/Footer/Footer.js";
+import Products from "./components/Products/products.js";
 import "./App.css";
 
 function App() {
@@ -89,7 +90,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <div style={{ height: "300px" }}></div>
+      <Products productsList={productList} />
       <Footer />
     </div>
   );

@@ -38,6 +38,7 @@ i {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding-left: -40px;
 }
 
 .subscribtion {
@@ -60,7 +61,7 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-  background-color: #b88746;
+  background-color: #c89655;
   font-weight: bold;
   color: #191919;
 }
