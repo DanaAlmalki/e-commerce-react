@@ -3,15 +3,31 @@ import React from "react";
 import Product from "./Product.js";
 import "./products.css";
 
-//import Product from "./Product.js";
+export default function products(props) {
+  const { productsList, setInput, input } = props;
 
-export default function products(products) {
-  // products = {productsList:[{} {} {}]}
+  function onChangeHandler(event) {
+    setInput(event.target.value);
+  }
+
+  const result = productsList.filter((product) =>
+    product.title.toLowerCase().includes(input.toLowerCase())
+  );
+
   return (
     <div className="productsContainer">
-      <h2>Products</h2>
+      <div className="search">
+        <h2>Products</h2>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter product name"
+            onChange={onChangeHandler}
+          ></input>
+        </form>
+      </div>
       <div className="products">
-        {products.productsList.map((productItem) => {
+        {result.map((productItem) => {
           return <Product product={productItem} />;
         })}
       </div>

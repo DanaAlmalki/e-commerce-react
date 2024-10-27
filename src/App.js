@@ -17,6 +17,7 @@ function App() {
   const [productList, setProductList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [input, setInput] = useState("");
 
   function getData() {
     axios
@@ -59,7 +60,13 @@ function App() {
         },
         {
           path: "/products",
-          element: <ProductsPage list={productList} />,
+          element: (
+            <ProductsPage
+              list={productList}
+              setInput={setInput}
+              input={input}
+            />
+          ),
         },
         {
           path: "/products/:productId",

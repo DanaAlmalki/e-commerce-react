@@ -27,7 +27,7 @@ export default function Footer() {
                 required
                 type="email"
                 id="email"
-                placeholder="Your Email Adrress"
+                placeholder="Your Email Address"
               />
             </label>
             <input type="submit" value="Subscribe" />

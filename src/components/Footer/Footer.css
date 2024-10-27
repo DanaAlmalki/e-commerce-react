@@ -49,11 +49,11 @@ i {
 
 input {
   height: 40px;
-  border-radius: 99999px;
+  border-radius: 9999px;
   text-align: center;
-  border: #fff;
   margin-right: 5px;
   font-size: medium;
+  border: 2px #191919 solid;
 }
 
 input[type="email"] {
@@ -74,7 +74,7 @@ input[type="submit"]:hover {
 
 input::placeholder {
   font-weight: bold;
-  color: #191919;
+  color: #404040;
   text-align: start;
   padding-left: 20px;
 }
