@@ -1,7 +1,7 @@
 .detail {
   display: flex;
   flex-direction: row;
-  column-gap: 50px;
+  column-gap: 30px;
   margin: 10px 100px;
 }
 
@@ -9,21 +9,26 @@
 .rightDetail {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   row-gap: 10px;
+  width: 50%;
 }
 
 .rightDetail {
-  justify-content: center;
+  align-items: start;
+}
+
+.leftDetail {
+  align-items: center;
 }
 
 .description {
   min-width: 100px;
+  max-width: 400px;
 }
 
 .productImg {
-  height: 50%;
+  max-height: 400px;
   object-fit: scale-down;
   margin-top: 20px;
 }

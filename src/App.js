@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./fonts/Alegreya.ttf";
 
 import HomePage from "./Pages/HomePage.js";
+import WishListPage from "./Pages/WishListPage.js";
 import ProductsPage from "./Pages/ProductsPage.js";
 import NotFound from "./Pages/NotFound.js";
 import LayOut from "./components/LayOut/LayOut.js";
@@ -18,6 +19,9 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [input, setInput] = useState("");
+  const [wishList, setWishList] = useState([]);
+
+  console.log(wishList, "wishList");
 
   function getData() {
     axios
@@ -65,12 +69,17 @@ function App() {
               list={productList}
               setInput={setInput}
               input={input}
+              wishList={wishList}
+              setWishList={setWishList}
             />
           ),
         },
         {
           path: "/products/:productId",
           element: <ProductDetailPage />,
+        },
+        {
+          path: "/wishList",
         },
         {
           path: "/*",

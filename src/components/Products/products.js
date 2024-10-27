@@ -4,15 +4,19 @@ import Product from "./Product.js";
 import "./products.css";
 
 export default function products(props) {
-  const { productsList, setInput, input } = props;
+  const { productsList, setInput, input, wishList, setWishList } = props;
 
   function onChangeHandler(event) {
     setInput(event.target.value);
   }
 
-  const result = productsList.filter((product) =>
-    product.title.toLowerCase().includes(input.toLowerCase())
-  );
+  let products = productsList;
+
+  if (input) {
+    products = productsList.filter((product) =>
+      product.title.toLowerCase().includes(input.toLowerCase())
+    );
+  }
 
   return (
     <div className="productsContainer">
@@ -27,8 +31,14 @@ export default function products(props) {
         </form>
       </div>
       <div className="products">
-        {result.map((productItem) => {
-          return <Product product={productItem} />;
+        {products.map((productItem) => {
+          return (
+            <Product
+              product={productItem}
+              wishList={wishList}
+              setWishList={setWishList}
+            />
+          );
         })}
       </div>
     </div>

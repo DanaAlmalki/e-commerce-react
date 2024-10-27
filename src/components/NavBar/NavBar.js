@@ -15,7 +15,7 @@ export default function NavBar() {
           <a href="products">Products</a>
         </li>
         <li>
-          <a>About Us</a>
+          <a href="/wishList">Wish List</a>
         </li>
       </ul>
     </nav>
