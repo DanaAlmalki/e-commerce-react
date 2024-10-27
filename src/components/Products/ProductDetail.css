@@ -1,0 +1,27 @@
+.detail {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  margin: 10px 100px;
+}
+
+.leftDetail,
+.rightDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightDetail {
+  justify-content: center;
+}
+
+.description {
+  width: 100%;
+}
+
+.productImg {
+  height: 50%;
+  object-fit: scale-down;
+}

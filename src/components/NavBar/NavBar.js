@@ -9,10 +9,10 @@ export default function NavBar() {
       <img className="logo" src={logo} />
       <ul className="navList">
         <li>
-          <a>Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a>Products</a>
+          <a href="products">Products</a>
         </li>
         <li>
           <a>About Us</a>

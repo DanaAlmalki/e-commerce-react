@@ -1,6 +1,6 @@
 footer {
-  width: 100%;
   height: 230px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -69,6 +69,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #b88746;
+  cursor: pointer;
 }
 
 input::placeholder {

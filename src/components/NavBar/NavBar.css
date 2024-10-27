@@ -20,3 +20,8 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+a {
+  color: #b88746;
+  text-decoration: none;
+}
