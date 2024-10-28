@@ -21,8 +21,6 @@ function App() {
   const [input, setInput] = useState("");
   const [wishList, setWishList] = useState([]);
 
-  console.log(wishList, "wishList");
-
   function getData() {
     axios
       .get(url)
@@ -80,6 +78,7 @@ function App() {
         },
         {
           path: "/wishList",
+          element: <WishListPage wishList={wishList} />,
         },
         {
           path: "/*",
